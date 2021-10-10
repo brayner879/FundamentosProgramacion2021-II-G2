@@ -1,65 +1,33 @@
-<<<<<<< HEAD
-importar java . util . Escáner ;
-
-public class PotenciaDeUnNumero {
-
-    public static void main ( String [ ] args ) {
-        Scanner in = new Scanner ( System . in ) ;
-        doble base , exponente , potencia ;
-        Sistema . fuera . print ( "Ingresa el valor de base:" ) ;
-        base = pulg . nextDouble ( ) ;
-        en . nextLine ( ) ;
-        Sistema . fuera . print ( "Ingresa el valor de exponente:" ) ;
-        exponente = en . nextDouble ( ) ;
-        en . nextLine ( ) ;
-        potencia = Matemáticas . pow ( base , exponente ) ;
-        Sistema . fuera . println ( "Valor de potencia:" + potencia;
-    }
-=======
 import java.util.Scanner;
-public class BecaEstudiante {
- static Scanner sc = new Scanner(System.in);
-
-static void becaPresEst(){
-static void becaPresEstDMP(){
-
-    //Declaracion de variables e inicializacion
-    int edad=0;
-    double promedio=0, montoBeca=0;
-    //Datos de Entrada
-    System.out.println("Ingrese su edad:");
-    edad=sc.nextInt();
-    System.out.println("Ingrese su promedio de nota:");
-    promedio=sc.nextDouble();    
-    //Proceso
-    if(edad>18){
-      if(promedio>=9){
-        montoBeca=2000;
-      }else if(promedio>=7.5 && promedio<9){
-        montoBeca=1000;
-      }else if(promedio>=6 && promedio<7.5){
-        montoBeca=500;
-      }else{
-        montoBeca=0;
-      }
-    }else{
-      if(promedio>=9){
-        montoBeca=3000;
-      }else if(promedio>=8 && promedio<9){
-        montoBeca=2000;
-      }else if(promedio<8 && promedio>=6){
-        montoBeca=100;
-      }else{
-        montoBeca=0;
-      }
+public class Examen2BA{
+  static Scanner sc = new Scanner(System.in);
+  static void salarioyPuntosBAMC(){
+    // definir variables
+    double puntos =0;
+    String  bono ="";
+    //datos de entrada
+    System.out.println("Ingrese sus puntos");
+    puntos=sc .nextDouble();  
+    //proceso
+    if (puntos>=100 && puntos<=200){
+      bono="10% ";
     }
-    //Datos Salida
-    if(montoBeca==0){
-      System.out.println("Esforzarse para el proximo ciclo...!");
-    }else{
-      System.out.println("Felicitaciones Ud. es acreedor de una Beca por el Monto de: $"+montoBeca);
+   else if (puntos>=201 && puntos<=300){
+      bono="40% ";
     }
-}
->>>>>>> 511628c898906de45b3bce329a5458b6c9900609
-
+    else if(puntos>=301 && puntos<=400){
+      bono="70% ";
+      }
+   else if(puntos>401){
+     bono="80% ";
+   }
+   else{
+      bono="No alcanzo bono";
+   }
+    //datos de salida
+    System.out.println("gano :"+bono);
+  }
+    public static void main(String[] arg){
+    salarioyPuntosBAMC();
+  }
 }
