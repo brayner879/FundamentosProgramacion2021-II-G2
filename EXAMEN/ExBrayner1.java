@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class PromedioDeTresExamenesDe2525Y50 {
+public class ExBrayner1.java {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
