@@ -108,7 +108,11 @@ static void suma20mumerosParesFor(){
   }
 
   public static void main(String[] args) {
+<<<<<<< HEAD
     System.out.println("Bienvenidos al sistema");
+=======
+    System.out.println("Holas Est. Repetitivas");
+>>>>>>> c57a95b41f7c6da0cac8a3905aed85154612477e
     menuOpciones();
   }
   
